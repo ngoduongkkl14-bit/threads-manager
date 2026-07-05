@@ -33,7 +33,7 @@ def connect(customer_name):
         f"https://threads.net/oauth/authorize"
         f"?client_id={APP_ID}"
         f"&redirect_uri={REDIRECT_URI}"
-        f"&scope=threads_basic,threads_content_publish"
+        f"&scope=threads_basic,threads_content_publish,threads_manage_replies"
         f"&response_type=code"
         f"&state={customer_name}"
     )
